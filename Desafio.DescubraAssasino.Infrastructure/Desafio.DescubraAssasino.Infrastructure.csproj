@@ -7,7 +7,7 @@
     <ProjectGuid>{712B74A2-FDBF-447B-9444-0AA096D9F5CE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Desafio.DescubraAssasino.Infrastructure</RootNamespace>
+    <RootNamespace>Desafio.DescubraAssasino.Domain</RootNamespace>
     <AssemblyName>Desafio.DescubraAssasino.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
-    <Compile Include="IDataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -5,7 +5,7 @@ using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Desafio.DescubraAssasino.Infrastructure;
+using Desafio.DescubraAssasino.Domain;
 using System.Reflection;
 
 namespace Desafio.DescubraAssasino.Domain.Tests
@@ -16,13 +16,13 @@ namespace Desafio.DescubraAssasino.Domain.Tests
 		private Case caseInvestigation;
 
 		private DataContext context;
-		
+
 		// Arrange
 		public CarregaDadosTests()
 		{
-			
+
 			DirectoryInfo directoryInfo = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-			
+
 			string localFiles = directoryInfo.Parent.Parent.FullName + "\\App_Data\\data.json";
 
 			this.context = new DataContext(localFiles);
@@ -61,23 +61,6 @@ namespace Desafio.DescubraAssasino.Domain.Tests
 			// Assert
 			Assert.IsNotNull(this.caseInvestigation.Guns);
 			Assert.IsTrue(this.caseInvestigation.Guns.Count() == 6);
-		}
-
-		[TestMethod]
-		public void Carregar_Witness()
-		{
-			// Arrange
-			Witness witness = new Witness();
-			witness.Name = "Teste";
-			
-			// Act
-			witness.Response = this.context.Responses.FirstOrDefault();
-
-			// Assert
-			Assert.IsNotNull(witness.Response);
-			Assert.AreEqual<string>(witness.Response.Suspect, "Donald Duck Knuth");
-			Assert.AreEqual<string>(witness.Response.Gun, "Trezoitão");
-			Assert.AreEqual<string>(witness.Response.Local, "Tokio");
 		}
 	}
 }

@@ -7,6 +7,6 @@ namespace Desafio.DescubraAssasino.Domain
 {
 	public class Detective
 	{
-		public List<string> Suspects { get; set; }
+		public string Name { get; set; }
 	}
 }

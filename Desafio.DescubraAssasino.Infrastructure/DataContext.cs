@@ -7,7 +7,7 @@ using Newtonsoft.Json.Linq;
 using Desafio.DescubraAssasino.Domain;
 using Newtonsoft.Json;
 
-namespace Desafio.DescubraAssasino.Infrastructure
+namespace Desafio.DescubraAssasino.Domain
 {
 	public class DataContext : IDataContext
 	{

@@ -8,8 +8,26 @@ namespace Desafio.DescubraAssasino.Domain
 {
 	public class Witness
 	{
-		public string Name { get; set; }
+		public Witness (IDataContext dataConstext)
+		{
+			Random random = new Random();
+			int index = random.Next(0, dataConstext.Responses.Count());
+			this.response = dataConstext.Responses.ToList()[index];
+		}
 
-		public Response Response { get; set; }
+		private Response response;
+
+		public ResponseType Reply(Theory theory)
+		{
+			if (!string.Equals(response.Suspect, theory.Suspect))
+				return ResponseType.Suspect;
+			else if (!string.Equals(response.Local, theory.Local))
+				return ResponseType.Local;
+			else if (!string.Equals(response.Gun, theory.Gun))
+				return ResponseType.Gun;
+
+			return ResponseType.Right;
+		}
+		
 	}
 }
