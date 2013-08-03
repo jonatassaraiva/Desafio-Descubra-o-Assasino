@@ -43,7 +43,7 @@ namespace Desafio.DescubraAssasino.Domain.Tests
 			});
 
 			// Act
-			QuestionService questionService = new QuestionService();
+			InterrogationService questionService = new InterrogationService();
 			Response teoriaCorreta = questionService.Start(mockContext.Object);
 
 			// Assert
@@ -68,7 +68,7 @@ namespace Desafio.DescubraAssasino.Domain.Tests
 			});
 
 			// Act
-			QuestionService questionService = new QuestionService();
+			InterrogationService questionService = new InterrogationService();
 			Response teoriaCorreta = questionService.Start(mockContext.Object);
 
 			// Assert

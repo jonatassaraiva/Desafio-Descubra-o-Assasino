@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Desafio.DescubraAssasino.Domain
 {
+	/// <summary>
+	/// Serviço de Teoria.
+	/// </summary>
 	public class TheoryService
 	{
 		private IDataContext dataContext;

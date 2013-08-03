@@ -9,6 +9,9 @@ using Newtonsoft.Json;
 
 namespace Desafio.DescubraAssasino.Domain
 {
+	/// <summary>
+	/// Implementação do IDataContext. Acessa dados de um Json
+	/// </summary>
 	public class DataContext : IDataContext
 	{
 		private JToken jsonToken;

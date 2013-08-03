@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Desafio.DescubraAssasino.Domain
 {
+	/// <summary>
+	/// Representa um Detetive.
+	/// </summary>
 	public class Detective
 	{
 		public string Name { get; set; }

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Desafio.DescubraAssasino.Domain
 {
+	/// <summary>
+	/// Representa um Suspeito.
+	/// </summary>
 	public class Witness
 	{
 		public Witness (IDataContext dataConstext)

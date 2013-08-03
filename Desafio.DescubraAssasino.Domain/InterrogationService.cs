@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Desafio.DescubraAssasino.Domain
 {
-	public class QuestionService
+	/// <summary>
+	/// Serviço de interrogatório.
+	/// </summary>
+	public class InterrogationService
 	{
 		public Response Start(IDataContext dataContext)
 		{

@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Desafio.DescubraAssasino.Domain
 {
+	/// <summary>
+	/// Representa uma Resposta com informações do Suspeito, Arama e Local.	
+	/// </summary>
 	public class Response
 	{
 		public string Suspect { get; set; }
@@ -12,6 +15,9 @@ namespace Desafio.DescubraAssasino.Domain
 		public string Local { get; set; }
 	}
 
+	/// <summary>
+	/// Tipos das resposta.
+	/// </summary>
 	public enum ResponseType
 	{
 		Right = 0,
