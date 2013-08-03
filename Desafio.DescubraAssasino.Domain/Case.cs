@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Desafio.DescubraAssasino.Domain.Tests
+namespace Desafio.DescubraAssasino.Domain
 {
 	public class Case
 	{

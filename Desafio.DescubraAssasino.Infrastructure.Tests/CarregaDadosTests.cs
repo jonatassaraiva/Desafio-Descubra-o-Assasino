@@ -5,6 +5,8 @@ using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Desafio.DescubraAssasino.Infrastructure;
+using System.Reflection;
 
 namespace Desafio.DescubraAssasino.Domain.Tests
 {
@@ -16,7 +18,11 @@ namespace Desafio.DescubraAssasino.Domain.Tests
 		private DataContext context;
 		public CarregaDadosTests()
 		{
-			this.context = new DataContext("c:\\json\\data.json");
+			DirectoryInfo directoryInfo = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+
+			string localFiles = directoryInfo.Parent.Parent.FullName + "\\App_Data\\data.json";
+
+			this.context = new DataContext(localFiles);
 			this.caseInvestigation = new Case();
 			this.caseInvestigation.Title = "O empresário Bill G.";
 		}

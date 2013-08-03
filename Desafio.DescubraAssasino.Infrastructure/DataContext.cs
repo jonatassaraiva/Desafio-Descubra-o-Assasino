@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using Newtonsoft.Json.Linq;
 
-namespace Desafio.DescubraAssasino.Domain.Tests
+namespace Desafio.DescubraAssasino.Infrastructure
 {
-	public class DataContext
+	public class DataContext : IDataContext
 	{
 		private JToken jsonToken;
 

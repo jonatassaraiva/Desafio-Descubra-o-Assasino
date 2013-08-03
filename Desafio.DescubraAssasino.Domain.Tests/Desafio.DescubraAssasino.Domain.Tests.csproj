@@ -37,9 +37,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -55,14 +52,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Case.cs" />
-    <Compile Include="DataContext.cs" />
-    <Compile Include="Detective.cs" />
-    <Compile Include="CarregaDadosTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Desafio.DescubraAssasino.Domain\Desafio.DescubraAssasino.Domain.csproj">
+      <Project>{8680f16e-2d43-4786-ab58-fc4c7fd00074}</Project>
+      <Name>Desafio.DescubraAssasino.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Desafio.DescubraAssasino.Infrastructure\Desafio.DescubraAssasino.Infrastructure.csproj">
+      <Project>{712b74a2-fdbf-447b-9444-0aa096d9f5ce}</Project>
+      <Name>Desafio.DescubraAssasino.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
