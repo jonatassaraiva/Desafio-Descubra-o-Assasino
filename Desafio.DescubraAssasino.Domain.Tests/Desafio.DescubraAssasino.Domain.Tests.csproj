@@ -55,9 +55,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="HelpMock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuestionServiceTests.cs" />
+    <Compile Include="InterrogationServiceTests.cs" />
     <Compile Include="TheoryTests.cs" />
+    <Compile Include="DetectiveTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Desafio.DescubraAssasino.Domain\Desafio.DescubraAssasino.Domain.csproj">

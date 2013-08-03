@@ -11,26 +11,31 @@ namespace Desafio.DescubraAssasino.Domain
 	/// </summary>
 	public class InterrogationService
 	{
-		public Response Start(IDataContext dataContext)
+		private Witness witness;
+		TheoryService theoryService;
+
+		public InterrogationService(Witness witness, Case caseForInterrogation)
 		{
-			Witness witness = new Witness(dataContext);
+			this.witness = witness;
+			this.theoryService = new TheoryService(caseForInterrogation);
+		}
 
-			TheoryService theoryService = new TheoryService(dataContext);
-
-			Theory theory = theoryService.NextTheory(false, false, false);
+		public Response Start()
+		{
+			Theory theory = this.theoryService.NextTheory(false, false, false);
 
 			ResponseType responseType = witness.Reply(theory);
 
 			while (responseType != ResponseType.Right)
 			{
 				if (responseType == ResponseType.Suspect)
-					WhoSuspect(responseType, ResponseType.Suspect, theoryService, witness, theory);
+					WhoSuspect(responseType, ResponseType.Suspect, this.theoryService, witness, theory);
 
 				if (responseType == ResponseType.Local)
-					WhoLocal(responseType, ResponseType.Local, theoryService, witness, theory);
+					WhoLocal(responseType, ResponseType.Local, this.theoryService, witness, theory);
 
 				if (responseType == ResponseType.Gun)
-					WhoGun(responseType, ResponseType.Gun, theoryService, witness, theory);
+					WhoGun(responseType, ResponseType.Gun, this.theoryService, witness, theory);
 
 				responseType = witness.Reply(theory);
 			}

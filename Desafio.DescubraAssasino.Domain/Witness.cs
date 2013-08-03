@@ -7,15 +7,13 @@ using System.Threading.Tasks;
 namespace Desafio.DescubraAssasino.Domain
 {
 	/// <summary>
-	/// Representa um Suspeito.
+	/// Representa um Testemunha.
 	/// </summary>
 	public class Witness
 	{
-		public Witness (IDataContext dataConstext)
+		public Witness (Response response)
 		{
-			Random random = new Random();
-			int index = random.Next(0, dataConstext.Responses.Count());
-			this.response = dataConstext.Responses.ToList()[index];
+			this.response = response;
 		}
 
 		private Response response;
