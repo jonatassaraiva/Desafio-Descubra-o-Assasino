@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json.Linq;
+using Desafio.DescubraAssasino.Domain;
+using Newtonsoft.Json;
 
 namespace Desafio.DescubraAssasino.Infrastructure
 {
@@ -39,6 +41,21 @@ namespace Desafio.DescubraAssasino.Infrastructure
 			get
 			{
 				return this.jsonToken.SelectToken("guns").Values<string>();
+			}
+		}
+
+		public IEnumerable<Response> Responses
+		{
+			get
+			{
+				var jsonTokenResponses = this.jsonToken.SelectToken("responses").Children();
+				ICollection<Response> responses = new List<Response>();
+				foreach (var item in jsonTokenResponses)
+				{
+					var response = JsonConvert.DeserializeObject<Response>(item.ToString());
+					responses.Add(response);
+				}
+				return responses;
 			}
 		}
 	}

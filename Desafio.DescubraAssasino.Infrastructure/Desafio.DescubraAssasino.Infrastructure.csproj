@@ -51,6 +51,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Desafio.DescubraAssasino.Domain\Desafio.DescubraAssasino.Domain.csproj">
+      <Project>{8680f16e-2d43-4786-ab58-fc4c7fd00074}</Project>
+      <Name>Desafio.DescubraAssasino.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

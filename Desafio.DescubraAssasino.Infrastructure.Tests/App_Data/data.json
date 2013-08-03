@@ -28,5 +28,17 @@
 		"Trebuchet",
 		"Maça",
 		"Gládio"
+	],
+
+	"responses": [{
+			"Suspect": "Donald Duck Knuth",
+			"Gun": "Trezoitão",
+			"Local": "Tokio"
+		},
+		{
+			"Suspect": "Charles B. Abbage",
+			"Gun": "Peixeira",
+			"Local": "Redmond"
+		}
 	]
 }
