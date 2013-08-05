@@ -1,4 +1,4 @@
-Desafio-Descubra-o-Assasino
+Desafio-Descubra-o-Assassino
 ===========================
 
-Projeto para o desafio Descubra o Assasino
+Projeto para o desafio Descubra o Assassino
