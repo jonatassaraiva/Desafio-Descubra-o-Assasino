@@ -184,11 +184,11 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Desafio.DescubraAssasino.Domain\Desafio.DescubraAssassino.Domain.csproj">
+    <ProjectReference Include="..\Desafio.DescubraAssassino.Domain\Desafio.DescubraAssassino.Domain.csproj">
       <Project>{8680f16e-2d43-4786-ab58-fc4c7fd00074}</Project>
       <Name>Desafio.DescubraAssassino.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Desafio.DescubraAssasino.Infrastructure\Desafio.DescubraAssassino.Infrastructure.csproj">
+    <ProjectReference Include="..\Desafio.DescubraAssassino.Infrastructure\Desafio.DescubraAssassino.Infrastructure.csproj">
       <Project>{712b74a2-fdbf-447b-9444-0aa096d9f5ce}</Project>
       <Name>Desafio.DescubraAssassino.Infrastructure</Name>
     </ProjectReference>

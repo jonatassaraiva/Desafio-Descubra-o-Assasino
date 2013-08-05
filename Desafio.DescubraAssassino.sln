@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.DescubraAssasino.Web", "Desafio.DescubraAssasino.Web\Desafio.DescubraAssasino.Web.csproj", "{5D4682B0-C21B-48B5-951D-1ED41094D2CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.DescubraAssassino.Web", "Desafio.DescubraAssassino.Web\Desafio.DescubraAssassino.Web.csproj", "{5D4682B0-C21B-48B5-951D-1ED41094D2CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.DescubraAssassino.Domain.Tests", "Desafio.DescubraAssasino.Domain.Tests\Desafio.DescubraAssassino.Domain.Tests.csproj", "{9268A6AF-0567-4161-9595-0AC843A23B39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.DescubraAssassino.Domain.Tests", "Desafio.DescubraAssassino.Domain.Tests\Desafio.DescubraAssassino.Domain.Tests.csproj", "{9268A6AF-0567-4161-9595-0AC843A23B39}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3F02EEE0-E8B9-4F33-A835-F58E7797B3FD}"
 	ProjectSection(SolutionItems) = preProject
@@ -12,11 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3F02EE
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.DescubraAssassino.Infrastructure", "Desafio.DescubraAssasino.Infrastructure\Desafio.DescubraAssassino.Infrastructure.csproj", "{712B74A2-FDBF-447B-9444-0AA096D9F5CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.DescubraAssassino.Infrastructure", "Desafio.DescubraAssassino.Infrastructure\Desafio.DescubraAssassino.Infrastructure.csproj", "{712B74A2-FDBF-447B-9444-0AA096D9F5CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.DescubraAssassino.Infrastructure.Tests", "Desafio.DescubraAssasino.Infrastructure.Tests\Desafio.DescubraAssassino.Infrastructure.Tests.csproj", "{C79B07A8-EDDD-47E9-AF3E-2A9F2DB81140}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.DescubraAssassino.Infrastructure.Tests", "Desafio.DescubraAssassino.Infrastructure.Tests\Desafio.DescubraAssassino.Infrastructure.Tests.csproj", "{C79B07A8-EDDD-47E9-AF3E-2A9F2DB81140}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.DescubraAssassino.Domain", "Desafio.DescubraAssasino.Domain\Desafio.DescubraAssassino.Domain.csproj", "{8680F16E-2D43-4786-AB58-FC4C7FD00074}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.DescubraAssassino.Domain", "Desafio.DescubraAssassino.Domain\Desafio.DescubraAssassino.Domain.csproj", "{8680F16E-2D43-4786-AB58-FC4C7FD00074}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DECBDAD6-6DF5-4152-9C6C-7607A18953A4}"
 EndProject

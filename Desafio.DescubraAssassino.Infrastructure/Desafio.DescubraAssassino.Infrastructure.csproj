@@ -51,7 +51,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Desafio.DescubraAssasino.Domain\Desafio.DescubraAssassino.Domain.csproj">
+    <ProjectReference Include="..\Desafio.DescubraAssassino.Domain\Desafio.DescubraAssassino.Domain.csproj">
       <Project>{8680f16e-2d43-4786-ab58-fc4c7fd00074}</Project>
       <Name>Desafio.DescubraAssassino.Domain</Name>
     </ProjectReference>
