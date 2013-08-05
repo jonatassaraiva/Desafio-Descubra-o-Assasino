@@ -1,0 +1,84 @@
+﻿@model Desafio.DescubraAssassino.Domain.Case
+
+@{
+	ViewBag.Title = "Index";
+}
+
+@section scripts{
+
+	<script type="text/javascript">
+		$(function () {
+			$("#formInverstigar").submit(function () {
+				var options = {
+					dataType: "html",
+					cache: false,
+					type: "POST",
+					data: $(this).serialize()
+				};
+
+				$.ajax("/investigacao/investigar", options).done(function (result) {
+						$(".response").html(result);
+				});
+
+				return false;
+			});
+		});
+	</script>
+}
+
+<br />
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4">
+			<div class="thumbnail">
+				<div class="caption">
+					<h3>Lista de Suspeito</h3>
+					<ul>
+						@foreach (var item in Model.Suspects)
+	  {
+							<li>
+								@item
+							</li>
+	  }
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="thumbnail">
+				<div class="caption">
+					<h3>Lista de Armas</h3>
+					<ul>
+						@foreach (var item in Model.Guns)
+	  {
+							<li>
+								@item
+							</li>
+	  }
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="thumbnail">
+				<div class="caption">
+					<h3>Lista de Locais</h3>
+					<ul>
+						@foreach (var item in Model.Locals)
+	  {
+							<li>
+								@item
+							</li>
+	  }
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br />
+	<div class="container">
+		@{Html.RenderAction("Investigar", "Investigacao");}
+	</div>
+
+</div>

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Desafio.DescubraAssasino.Web
+namespace Desafio.DescubraAssassino.Web
 {
 	public class RouteConfig
 	{

@@ -1,11 +1,11 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Desafio.DescubraAssasino.Domain;
+using Desafio.DescubraAssassino.Domain;
 using Moq;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Desafio.DescubraAssasino.Domain.Tests
+namespace Desafio.DescubraAssassino.Domain.Tests
 {
 	[TestClass]
 	public class TheoryTests

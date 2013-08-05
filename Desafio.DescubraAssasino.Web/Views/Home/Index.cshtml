@@ -1,0 +1,12 @@
+﻿@{
+	ViewBag.Title = "Index";
+}
+
+<div class="jumbotron">
+	<h2>O assassinato de Bill G.</h2>
+	<p class="lead">O empresário Bill G. Ates foi assassinado e o corpo dele foi deixado na frente da delegacia de polícia. O detetive Lin Ust Orvalds foi escolhido para investigar este caso. Após uma série de investigações, ele organizou uma lista com prováveis assassinos, os locais do crime e quais armas poderiam ter sido utilizadas.</p>
+
+	<p class="lead">Uma testemunha foi encontrada, mas ela só consegue responder se o detetive Lin Ust Orvalds fornecer uma teoria. Para cada teoria, o detetive "chuta" um assassino, um local e uma arma. A testemunha, então, responde com um número. Se a teoria estiver correta (assassino, local e arma corretos), ela responde 0. Se a teoria está errada, um valor 1, 2 ou 3 é retornado. O valor 1 indica que o assassino(a) está incorreto; 2 indica que o local está incorreto; 3 indica que a arma está incorreta.</p>
+	
+	<p><a href="@Url.Action("index", "investigacao")" class="btn btn-large btn-success">Iniciar investigação</a></p>
+</div>

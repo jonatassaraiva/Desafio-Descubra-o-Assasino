@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Desafio.DescubraAssassino.Domain.Response>
+
+<div class="thumbnail col-lg-12">
+	<div class="caption row">
+		<div class="col-lg-4">
+			<div class="thumbnail caption">
+				<form id="formInverstigar" action="@Url.Action("investigar", "investigacao")" method="post">
+					<fieldset>
+						<legend>Investigar</legend>
+						<div class="form-group">
+							<label for="exampleInputEmail">Testemunha:</label>
+							@{
+								int index = 0;
+								foreach (var response in Model)
+								{
+								<div class="radio">
+									<label>
+										@if (index == 0)
+										{
+											<input type="radio" name="response" value="@index" checked/>
+										}
+										else
+										{
+											<input type="radio" name="response" value="@index"/>			   
+										}
+										Resposta @(index + 1)
+									</label>
+								</div>
+									index++;
+								}
+							}
+						</div>
+						<button type="submit" class="btn btn-primary">Inivivar</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+			<div class="col-lg-1"></div>
+		<div class="response">
+			
+		</div>
+</div>

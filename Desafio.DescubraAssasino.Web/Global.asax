@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Desafio.DescubraAssasino.Web.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Desafio.DescubraAssassino.Web.MvcApplication" Language="C#" %>

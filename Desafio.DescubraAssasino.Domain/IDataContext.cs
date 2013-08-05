@@ -1,8 +1,7 @@
-﻿using Desafio.DescubraAssasino.Domain;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace Desafio.DescubraAssasino.Domain
+namespace Desafio.DescubraAssassino.Domain
 {
 	/// <summary>
 	/// Contrato de acesso a dados.

@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Desafio.DescubraAssassino.Domain;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Desafio.DescubraAssasino.Domain.Tests
+namespace Desafio.DescubraAssassino.Domain.Tests
 {
 	[TestClass]
 	public class InterrogationServiceTests

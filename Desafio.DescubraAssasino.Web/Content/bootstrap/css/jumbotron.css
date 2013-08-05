@@ -1,0 +1,18 @@
+﻿
+body {
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.navbar-form input[type="text"], .navbar-form input[type="password"] {
+    width: 180px;
+}
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.jumbotron {
+    margin-top: 20px;
+}
+.body-content {
+    padding: 0;
+}

@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Desafio.DescubraAssassino.Domain;
 
-namespace Desafio.DescubraAssasino.Domain.Tests
+namespace Desafio.DescubraAssassino.Domain.Tests
 {
 	[TestClass]
 	public class DetectiveTests

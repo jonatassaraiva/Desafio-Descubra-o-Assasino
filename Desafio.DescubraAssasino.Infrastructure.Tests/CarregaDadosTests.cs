@@ -5,10 +5,10 @@ using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Desafio.DescubraAssasino.Domain;
+using Desafio.DescubraAssassino.Domain;
 using System.Reflection;
 
-namespace Desafio.DescubraAssasino.Domain.Tests
+namespace Desafio.DescubraAssassino.Domain.Tests
 {
 	[TestClass]
 	public class CarregaDadosTests

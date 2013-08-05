@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Desafio.DescubraAssasino.Domain
+namespace Desafio.DescubraAssassino.Domain
 {
 	/// <summary>
 	/// Serviço de Teoria.

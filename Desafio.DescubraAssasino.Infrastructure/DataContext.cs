@@ -4,10 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json.Linq;
-using Desafio.DescubraAssasino.Domain;
 using Newtonsoft.Json;
+using Desafio.DescubraAssassino.Domain;
 
-namespace Desafio.DescubraAssasino.Domain
+namespace Desafio.DescubraAssassino.Domain
 {
 	/// <summary>
 	/// Implementação do IDataContext. Acessa dados de um Json

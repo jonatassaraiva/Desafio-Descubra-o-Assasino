@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Desafio.DescubraAssasino.Domain
+namespace Desafio.DescubraAssassino.Domain
 {
 	/// <summary>
 	/// Representa uma Resposta com informações do Suspeito, Arama e Local.	
